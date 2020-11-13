@@ -1,0 +1,201 @@
+/*------------------------------------
+全体
+--------------------------------------*/
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+}
+h2{
+  font-size: 50px;
+}
+.clear{
+  clear: both;
+}
+li,p,h2,h4{
+  font-family: serif;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:1150px){
+  body{
+    position: relative;
+    right: 0;
+    overflow-x: hidden;
+  }
+  h2{
+    font-size: 30px;
+  }
+}
+/*------------------------------------
+ヘッダー
+--------------------------------------*/
+header{
+  padding: 1px;
+  height: 90px;
+  text-align: left;
+  background-color: rgb(43, 119, 198);
+  font-size: 35px;
+}
+header h1{
+  color: white;
+}
+header img{
+  height: auto;
+  width: 450px;
+  position: relative;
+  top: -10px;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:1150px){
+  header{
+    height: 60px;
+  }
+  header img{
+    width: 95%;
+    height: auto;
+    position: relative;
+    top: -25px;
+  }
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホ用メニューーーー*/
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+/*------------------------------------
+PC用メニュー
+--------------------------------------*/
+#pc_menu{
+  float: right;
+  position: absolute;
+  top: 40px;
+  right: 1px;
+  height: 120px;
+}
+#pc_menu ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#pc_menu li{
+display: inline;
+padding: 0;
+margin: 0;
+float: left;
+}
+#pc_menu li a{
+display: inline-block;
+padding: 10px;
+text-decoration: none;
+width: 160px;
+margin right: 30px;
+text-align: center;
+font-size: 30px;
+color: white;
+}
+#pc_menu li a:hover{
+  color: rgb(245, 242, 9);
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホ用メニューーー*/
+#smt_menu{
+  display: none;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:1150px){
+  #pc_menu{
+    display: none;
+  }
+  #smt_menu{
+    display: block;
+    height: 80px;
+    position: relative;
+    top: -1px;
+    border: 2px solid  rgb(90, 140, 193);
+    background-color: rgb(90, 140, 193);
+  }
+  #smt_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #smt_menu ul img{
+    display: table-cell;
+    height: 70px;
+    width: auto;
+    margin: 4px 10px;
+    position: relative;
+    top: -10px;
+  }
+  #smt_menu li{
+    display: inline;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    float: left;
+    width: 20%;
+  }
+  #smt_menu li a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    }
+  }
+/*------------------------------------
+メインコンテンツ
+--------------------------------------*/
+#news,#learning,#contact{
+  margin: auto;
+    margin-bottom: 100px;
+    margin-top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+#news h3,
+#learning h3{
+    font-size: 2em;
+    color: rgb(249,111,52);
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:1150px){
+  #news,#learning,#contact{
+    width: 95%;
+  }
+}
+
+/*------------------------------------
+フッター
+--------------------------------------*/
+footer{
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(43, 119, 198);
+  bottom: 0;
+  position:relative;
+}
+
+
+footer h4{
+  height: 45px;
+  margin: 0;
+  color: white;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:1150px){
+    footer{
+        position: static;
+    }
+    #news_footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,255 @@
+/*------------------------------------
+全体
+--------------------------------------*/
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+img{
+  width: 100%;
+}
+.clear{
+  clear: both;
+}
+h2{
+  font-size: 50px;
+  text-align: center;
+}
+li,p,h2,h4{
+  font-family: serif;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:480px){
+  body{
+    position: relative;
+    right: 0;
+    overflow-x: hidden;
+  }
+  h2{
+    font-size: 30px;
+  }
+}
+/*------------------------------------
+ヘッダー
+--------------------------------------*/
+header{
+  padding: 1px;
+  height: 90px;
+  text-align: left;
+  background-color: rgb(43, 119, 198);
+  font-size: 35px;
+}
+header h1{
+  color: white;
+}
+header img{
+  height: auto;
+  width: 450px;
+  position: relative;
+  top: -10px;
+  left: 15px;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:480px){
+  header{
+    height: 60px;
+  }
+  header img{
+    width: 95%;
+    height: auto;
+    position: relative;
+    top: -25px;
+    left: 0;
+  }
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホ用メニューーーー*/
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+/*------------------------------------
+PC用メニュー
+--------------------------------------*/
+#pc_menu{
+  float: right;
+  position: absolute;
+  top: 40px;
+  right: 1px;
+  height: 120px;
+}
+#pc_menu ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#pc_menu li{
+display: inline;
+padding: 0;
+margin: 0;
+float: left;
+}
+#pc_menu li a{
+display: inline-block;
+padding: 10px;
+text-decoration: none;
+width: 160px;
+margin right: 30px;
+text-align: center;
+font-size: 30px;
+color: white;
+}
+#pc_menu li a:hover{
+  color: rgb(245, 242, 9);
+}
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホ用メニューーー*/
+#smt_menu{
+  display: none;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:1150px){
+  #pc_menu{
+    display: none;
+  }
+  #smt_menu{
+    display: block;
+    height: 80px;
+    position: relative;
+    top: -1px;
+    border: 2px solid  rgb(90, 140, 193);
+    background-color: rgb(90, 140, 193);
+  }
+  #smt_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #smt_menu ul img{
+    display: table-cell;
+    height: 70px;
+    width: auto;
+    margin: 4px 10px;
+    position: relative;
+    top: -11px;
+  }
+  #smt_menu li{
+    display: inline;
+    height: 75px;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+    float: left;
+    width: 20%;
+  }
+  #smt_menu li a{
+    display: inline-block;
+    padding: 10px;
+    height: 80px;
+    text-decoration: none;
+    }
+  }
+}
+/*------------------------------------
+ニュース
+--------------------------------------*/
+#pc_sakura img{
+  width: 100%;
+  height: auto;
+}
+#pc_news{
+  height: auto;
+  width: 70%;
+  margin: auto;
+  padding: 1px 30px 0;
+  position: relative;
+  top: -130px;
+  background-color: rgba(78, 77, 77, 0.63);
+}
+#pc_news h2{
+  font-size: 26px;
+  color: white;
+  text-align: left;
+  }
+#pc_news p{
+  color: white;
+  position: relative;
+  top: -20px;
+}
+#smt_news,#smt_sakura{
+  display: none;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:480px){
+  #pc_news,#pc_sakura{
+    display: none;
+  }
+  #smt_sakura{
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -2px;
+  }
+  #smt_news{
+    display: block;
+    width: 80%;
+    height: 87px;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    top: -53px;
+  }
+  #smt_news h2{
+    text-align: left;
+  }
+  #smt_news p{
+    text-align: left;
+  }
+}
+
+/*------------------------------------
+コンテンツ
+--------------------------------------*/
+#about_us {
+  margin: 20px 0;
+  padding: 30px 0;
+  width: 100%;
+  position: relative;
+  top: -120px;
+}
+#about_us p{
+    text-align: center;
+}
+/*ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーースマホーーー*/
+@media screen and (max-width:480px){
+  #about_us main{
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    top: 30px;
+  }
+  #about_us p,#about_us h2{
+    text-align: left;
+  }
+}
+
+/*------------------------------------
+フッター
+--------------------------------------*/
+footer{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  top: -100px;
+  text-align: center;
+  background-color: rgb(43, 119, 198);
+}
+footer h4{
+  height: 45px;
+  margin: 0;
+  color: white;
+  line-height: 50px;
+  font-size: 20px;
+}
